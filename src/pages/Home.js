@@ -29,6 +29,7 @@ const footerStyle = {
   color: "#fff",
   backgroundColor: "#7dbcea",
 };
+
 const Home = () => {
   console.log("Responsive", Responsive());
 
