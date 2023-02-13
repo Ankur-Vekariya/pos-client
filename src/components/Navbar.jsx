@@ -43,10 +43,10 @@ const items = [
 const Navbar = () => {
   return (
     <div>
-      <Row style={{ backgroundColor: "#2C3639" }}>
+      <Row style={{ backgroundColor: "#CFB997" }}>
         <Col span={4}>logo</Col>
         <Col span={12}>
-          <Title style={{ fontSize: 30, color: "#DCD7C9" }}>
+          <Title style={{ fontSize: 30, color: "#567189" }}>
             Restaurant Manager
           </Title>
         </Col>
@@ -58,13 +58,13 @@ const Navbar = () => {
             justifyContent: "space-around",
           }}
         >
-          <Button type="text" style={{ color: "#A27B5C", fontSize: 20 }}>
+          <Button type="text" style={{ color: "#567189", fontSize: 20 }}>
             Menu
           </Button>
-          <Button type="text" style={{ color: "#A27B5C", fontSize: 20 }}>
+          <Button type="text" style={{ color: "#567189", fontSize: 20 }}>
             Orders
           </Button>
-          <Button type="text" style={{ color: "#A27B5C", fontSize: 20 }}>
+          <Button type="text" style={{ color: "#567189", fontSize: 20 }}>
             Products
           </Button>
           <Dropdown
@@ -73,7 +73,7 @@ const Navbar = () => {
             }}
             placement="bottom"
           >
-            <Button type="text" style={{ color: "#A27B5C", fontSize: 20 }}>
+            <Button type="text" style={{ color: "#567189", fontSize: 20 }}>
               Settings
             </Button>
           </Dropdown>
