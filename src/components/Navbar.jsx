@@ -6,27 +6,11 @@ const { Title, Paragraph, Text } = Typography;
 const items = [
   {
     key: "1",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Profile
-      </a>
-    ),
+    label: <Link to={"/profile"}>profile</Link>,
   },
   {
     key: "2",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
-        Product
-      </a>
-    ),
+    label: <Link to={"/product"}>Product</Link>,
   },
   {
     key: "3",
