@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col, Button, Typography, Dropdown } from "antd";
-const { Title, Paragraph, Text, Link } = Typography;
+import { Link } from "react-router-dom";
+
+const { Title, Paragraph, Text } = Typography;
 const items = [
   {
     key: "1",

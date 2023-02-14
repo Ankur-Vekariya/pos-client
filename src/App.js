@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import EditCategory from "./pages/category/EditCategory";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to={"/home"} replace />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/edit-category" element={<EditCategory />} />
+
       </Routes>
     </BrowserRouter>
   );
