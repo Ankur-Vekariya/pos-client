@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import EditCategory from "./pages/category/EditCategory";
 import ProductList from "./pages/products/ProductList";
+import EditProduct from "./pages/products/EditProduct";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/edit-category" element={<EditCategory />} />
         <Route path="/product" element={<ProductList />} />
+        <Route path="/edit-product" element={<EditProduct/>} />
+
       </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Card } from "antd";
+import { Button, Card } from "antd";
 import Navbar from "../../components/Navbar";
+import { Col, Row } from "antd";
+import { Link } from "react-router-dom";
+const gridStyle = {
+  width: "100%",
+  textAlign: "center",
+};
 const { Meta } = Card;
 const ProductList = () => {
   const [product, setProduct] = useState([]);
@@ -13,22 +19,28 @@ const ProductList = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        {product.length > 0 &&
-          product.map((item, index) => {
-            return (
-              <Card
-                hoverable
-                style={{
-                  width: 240,
-                }}
-                cover={<img alt="example" src={item.image} />}
-              >
-                <Meta title={item.title} description={item.description} />
-              </Card>
-            );
-          })}
-      </div>
+      <Row>
+        <Col span={16}>
+          <h1>Products</h1>
+          <div >
+            {product.length > 0 &&
+              product.map((item, index) => {
+                return (
+                  <Card
+                    hoverable
+                    style={{
+                      width: 240,
+                    }}
+                    cover={<img alt="example" src={item.image} />}
+                  >
+                    <Meta title={item.title} description={item.description} />
+                  </Card>
+                );
+              })}
+          </div>
+        </Col>
+        <Col span={8}><Button type="primary"><Link to={"/edit-product"}>Add Products</Link></Button></Col>
+      </Row>
     </div>
   );
 };
